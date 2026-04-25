@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciLearn — Learn Science the Simple Way</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">🔬 SciLearn</a>
+      <div class="nav-links">
+        <a href="#subjects">Subjects</a>
+        <a href="#topics">Topics</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Learn Science<br><span class="accent">the Simple Way</span></h1>
+      <p class="tagline">Physics · Chemistry · Biology — clear, concise, free.</p>
+      <a href="#subjects" class="cta">Get Started →</a>
+    </section>
+
+    <section id="subjects" class="subjects">
+      <h2>Choose a Subject</h2>
+      <div class="cards">
+        <article class="card" data-subject="physics">
+          <div class="emoji">⚡</div>
+          <h3>Physics</h3>
+          <p>Newton's Laws, Light, Electricity, Magnetism, Waves, and more.</p>
+          <button onclick="showTopics('physics')">Explore →</button>
+        </article>
+        <article class="card" data-subject="chemistry">
+          <div class="emoji">🧪</div>
+          <h3>Chemistry</h3>
+          <p>Atoms, Periodic Table, Reactions, Acids & Bases, Bonding.</p>
+          <button onclick="showTopics('chemistry')">Explore →</button>
+        </article>
+        <article class="card" data-subject="biology">
+          <div class="emoji">🌿</div>
+          <h3>Biology</h3>
+          <p>Cells, Photosynthesis, Genetics, Evolution, Ecosystems.</p>
+          <button onclick="showTopics('biology')">Explore →</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="topics" class="topics">
+      <h2>Topics</h2>
+      <p class="hint" id="topicsHint">Pick a subject above to see topics.</p>
+      <div id="topicsList" class="topics-list"></div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>SciLearn is a simple, static site to revise core science concepts. No login. No tracking. No clutter.</p>
+      <p>Topics cover the standard 9th–12th grade syllabus. Each topic links to a trusted source on Wikipedia for the full explanation.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with plain HTML & CSS · Deployed on GitHub Pages</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
